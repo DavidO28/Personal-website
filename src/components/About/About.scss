@@ -1,0 +1,57 @@
+@import '../../globalColors.scss';
+
+.About {
+    h2 {
+        text-align: center;
+    }
+
+    .information {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .left,
+        .right {
+            width: 100%;
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width: 762px) {
+    .information {
+        flex-direction: column;
+
+        .left,
+        .right {
+            height: 46vh;
+            width: 100%;
+        }
+
+        .gif {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media only screen and (min-width: 763px) {
+    .information {
+        flex-direction: row;
+
+        .left,
+        .right {
+            margin: 0 2px;
+        }
+
+        .gif {
+            margin: 30px;
+            object-fit: contain;
+        }
+    }
+
+}

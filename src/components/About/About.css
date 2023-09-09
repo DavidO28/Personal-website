@@ -1,0 +1,44 @@
+.About h2 {
+  text-align: center;
+}
+.About .information {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.About .information .left,
+.About .information .right {
+  width: 100%;
+}
+
+@media only screen and (max-width: 762px) {
+  .information {
+    flex-direction: column;
+  }
+  .information .left,
+  .information .right {
+    height: 46vh;
+    width: 100%;
+  }
+  .information .gif {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media only screen and (min-width: 763px) {
+  .information {
+    flex-direction: row;
+  }
+  .information .left,
+  .information .right {
+    margin: 0 2px;
+  }
+  .information .gif {
+    margin: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}/*# sourceMappingURL=About.css.map */

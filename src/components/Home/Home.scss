@@ -1,0 +1,61 @@
+@import '../../globalColors.scss';
+
+
+.Home {
+    height: calc(100vh - 50px) !important;
+    display: flex;
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        overflow: hidden;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        clip-path: polygon(0 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 60% 75%, 0% 75%);
+        background-color: $blue;
+    }
+
+}
+
+@media only screen and (max-width: 762px) {
+    .Home {
+        flex-direction: column-reverse;
+
+        .left,
+        .right {
+            height: 50%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 763px) {
+    .Home {
+        flex-direction: row;
+
+        .left,
+        .right {
+         
+            margin: 0 2px;
+        }
+    }
+
+}
