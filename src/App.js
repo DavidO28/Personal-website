@@ -12,27 +12,26 @@ import "./index.scss";
 import "./globalColors.scss";
 
 function App() {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    const offset = window.scrollY
-    console.log("OFFSET VALUE", offset)
-    if (offset > 300) {
-      setScrolled(true);
+  // const handleScroll = () => {
+  //   const offset = window.scrollY
+  //   console.log("OFFSET VALUE", offset)
+  //   if (offset > 300) {
+  //     setScrolled(true);
 
-    } else {
-      setScrolled(false);
-    }
-  }
+  //   } else {
+  //     setScrolled(false);
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-  })
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll)
+  // })
 
 
   return (
     <div className="myApp" >
-
       <Navbar />
       <div className="sections">
         <Home />
