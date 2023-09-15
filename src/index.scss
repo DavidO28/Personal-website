@@ -8,7 +8,6 @@
 
 body {
   background-color: $white;
-
 }
 
 .myApp {
@@ -19,6 +18,8 @@ body {
     scroll-behavior: smooth;
     overflow-y: auto;
     scrollbar-width: none;
+    position: relative;
+    top: 50px;
 
     &::-webkit-scrollbar {
       display: none;
@@ -30,7 +31,6 @@ body {
       scroll-snap-align: start;
       box-shadow: 0px 4px 10px 1px $black;
       padding: 5px;
-
     }
   }
 }

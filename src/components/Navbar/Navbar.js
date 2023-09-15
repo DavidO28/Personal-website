@@ -9,16 +9,17 @@ import { useState } from "react";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-   
+
 
     return (
         <>
             <nav className="navbar" id="Navbar">
+
+                {/* <Link className="nav-link david" to="/">David.</Link> */}
+                {/* <a className="nav-link david" href="">David.</a> */}
+
+
                 <div className="navbar-ul-section">
-                    <span>
-                        {/* <Link className="nav-link david" to="/">David.</Link> */}
-                        <a className="nav-link david" href="">David.</a>
-                    </span>
                     <ul className="nav-ul">
                         <li className="nav-li ">
                             {/* <Link className="nav-link homelink" to="/">Home</Link> */}
@@ -36,7 +37,7 @@ export default function Navbar() {
                 </div>
 
 
-                <div>
+                <div className="mobile-menu">
                     <div className="burgermenu-icons">
                         <img className={open ? "burger-icon passive" : "burger-icon"} onClick={() => setOpen(!open)} src={burgerIcon} alt="Burger menu icon" />
                         <img className={open ? "burger-close active" : "burger-close"} onClick={() => setOpen(!open)} src={burgerClose} alt="close burger menu icon" />

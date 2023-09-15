@@ -1,6 +1,5 @@
 .Home {
   display: flex;
-  height: 100vh !important;
 }
 .Home .left,
 .Home .right {
@@ -42,7 +41,6 @@
   .Home .left,
   .Home .right {
     margin: 2.5px 0;
-    height: calc(100vh - 25px) !important;
   }
   .Home .right {
     text-align: center;

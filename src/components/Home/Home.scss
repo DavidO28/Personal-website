@@ -3,7 +3,7 @@
 
 .Home {
     display: flex;
-height: 100vh !important;
+
     .left,
     .right {
         width: 100%;
@@ -50,7 +50,6 @@ height: 100vh !important;
         .left,
         .right {
             margin: 2.5px 0;
-            height: calc(100vh - 25px) !important;
         }
 
         .right {
@@ -112,4 +111,3 @@ height: 100vh !important;
     font-weight: bold;
     color: $black;
 }
-
