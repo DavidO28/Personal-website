@@ -1,5 +1,3 @@
-
-
 import MainBackground from "../../assets/head.gif";
 
 

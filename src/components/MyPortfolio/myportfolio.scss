@@ -1,10 +1,30 @@
 @import '../../globalColors.scss';
 
 .myportfolio {
-    h2,h3{
+
+    h2,
+    h3 {
         text-align: center;
     }
-    .porfolioItems{
 
+    .portfolioItems {
+        width: 100px;
+        height: 100px;
+
+        a {
+            width: 10px;
+            height: 10px;
+            display: block;
+
+            .sliderIMG {
+                width: 10px !important;
+                height: 10px !important;
+                object-fit: contain !important;
+            }
+            .lameri{
+                width: 100px;
+                height: 100px;
+            }
+        }
     }
 }

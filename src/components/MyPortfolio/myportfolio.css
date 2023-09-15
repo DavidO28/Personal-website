@@ -1,3 +1,23 @@
-.myportfolio h2, .myportfolio h3 {
+.myportfolio h2,
+.myportfolio h3 {
   text-align: center;
+}
+.myportfolio .portfolioItems {
+  width: 100px;
+  height: 100px;
+}
+.myportfolio .portfolioItems a {
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+.myportfolio .portfolioItems a .sliderIMG {
+  width: 10px !important;
+  height: 10px !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+.myportfolio .portfolioItems a .lameri {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=myportfolio.css.map */
