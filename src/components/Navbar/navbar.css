@@ -25,11 +25,7 @@ a {
     display: none;
   }
   .navbar .burgermenu-icons {
-    position: fixed;
-    top: 0;
-    width: 100%;
     background-color: #fcfcff;
-    z-index: 999;
   }
   .navbar .burger-icon,
   .navbar .burger-close {
