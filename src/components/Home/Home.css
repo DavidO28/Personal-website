@@ -1,5 +1,4 @@
 .Home {
-  height: calc(100vh - 50px) !important;
   display: flex;
 }
 .Home .left,
@@ -7,26 +6,32 @@
   width: 100%;
 }
 .Home .left {
-  overflow: hidden;
-  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .Home .left img {
+  border-radius: 100%;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  animation: leviating ease-in-out 2s infinite alternate;
+}
+@keyframes leviating {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 .Home .right {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 60% 75%, 0% 75%);
-          clip-path: polygon(0 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 60% 75%, 0% 75%);
-  background-color: #35B7F1;
 }
 
 @media only screen and (max-width: 762px) {
@@ -35,7 +40,11 @@
   }
   .Home .left,
   .Home .right {
-    height: 50%;
+    margin: 2.5px 0;
+    height: calc(100vh - 25px) !important;
+  }
+  .Home .right {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 763px) {
@@ -44,6 +53,50 @@
   }
   .Home .left,
   .Home .right {
-    margin: 0 2px;
+    height: 100%;
   }
+}
+.headline {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.i-title {
+  height: 200px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 4s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #050301;
+}
+
+.i-title-item2 {
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #050301;
 }/*# sourceMappingURL=Home.css.map */

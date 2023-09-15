@@ -22,7 +22,7 @@ export default function Navbar() {
                     <ul className="nav-ul">
                         <li className="nav-li ">
                             {/* <Link className="nav-link homelink" to="/">Home</Link> */}
-                            <a className="nav-link homelink" href="#Home">Home</a>
+                            <a className="nav-link homelink" href="#Navbar">Home</a>
                         </li>
                         <li className="nav-li">
                             {/* <Link className="nav-link" to="/about">About</Link> */}
@@ -44,7 +44,7 @@ export default function Navbar() {
                         <ul className={open ? "burger-ul active" : "burger-ul "}>
                             <li className="burger-li" onClick={() => setOpen(!open)}>
                                 {/* <Link className="nav-link" to="/">Home</Link> */}
-                                <a className="nav-link " href="#Home">Home</a>
+                                <a className="nav-link " href="#Navbar">Home</a>
                             </li>
                             <li className="burger-li" onClick={() => setOpen(!open)}>
                                 {/* <Link className="nav-link" to="/about">About</Link> */}

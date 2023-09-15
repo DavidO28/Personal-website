@@ -14,6 +14,7 @@ a {
 
 a {
   font-weight: bold;
+  transition: all 0.5s ease !important;
 }
 
 @media only screen and (max-width: 762px) {
@@ -61,15 +62,16 @@ a {
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    transition: 0.4s;
+    transition: 0.3s;
+    color: #050301;
   }
   .navbar .burger-ul .burger-li a:hover {
     background-color: #050301;
     color: #fcfcff;
   }
   .navbar .burger-ul.active {
-    width: 40%;
-    box-shadow: -5px 10px 10px 1px #050301;
+    width: 60%;
+    font-size: larger;
     overflow: visible;
   }
 }
