@@ -1,6 +1,6 @@
 import AnimatedText from "../AnimatedText/AnimatedText";
 import "../AnimatedText/animatedText.scss";
-import MainBackground from "../../assets/HomeBackground.jpg";
+import MainBackground from "../../assets/head.gif";
 
 
 export default function Home() {
@@ -13,11 +13,23 @@ export default function Home() {
                     <img src={MainBackground} alt="background image" />
                 </div>
             </div>
+
             <div className="right">
-                <h1>
+                <div className="headline">
+                    <h1>hello I'm </h1>
+                    <div className="i-title">
+                        <div className="i-title-wrapper">
+                            <div className="i-title-item">David</div>
+                            <div className="i-title-item">Front-end web Developer</div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <h1>
                     <AnimatedText text={mytext}
                         delay={150} infinite />
-                </h1>
+                </h1> */}
+
             </div>
         </div>
     );
