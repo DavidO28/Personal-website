@@ -21,14 +21,15 @@ a {
   body {
     overflow-x: hidden;
   }
-  .navbar {
+  .navbar .nav-ul {
+    display: none;
+  }
+  .navbar .burgermenu-icons {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #fcfcff;
-  }
-  .navbar .nav-ul {
-    display: none;
+    z-index: 999;
   }
   .navbar .burger-icon,
   .navbar .burger-close {
