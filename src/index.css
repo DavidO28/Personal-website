@@ -25,14 +25,4 @@ body {
   scroll-snap-align: start;
   box-shadow: 0px 4px 10px 1px #050301;
   padding: 5px;
-}
-
-@media only screen and (max-width: 762px) {
-  .myApp .sections > * {
-    width: 100%;
-    height: calc(100vh - 50px);
-    position: relative;
-    margin-top: 50px;
-    box-shadow: 0px 0px 0px 0px transparent;
-  }
 }/*# sourceMappingURL=index.css.map */

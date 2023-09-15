@@ -1,5 +1,6 @@
 .Home {
   display: flex;
+  height: 100vh !important;
 }
 .Home .left,
 .Home .right {
@@ -36,7 +37,6 @@
 
 @media only screen and (max-width: 762px) {
   .Home {
-    margin-top: 50px;
     flex-direction: column-reverse;
   }
   .Home .left,
