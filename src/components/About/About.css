@@ -1,10 +1,17 @@
+.About {
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+}
 .About h2 {
   text-align: center;
 }
 .About .information {
+  padding: 10px 5px;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+  height: 100%;
 }
 .About .information .left,
 .About .information .right {
@@ -17,27 +24,26 @@
   }
   .information .left,
   .information .right {
-    height: 46vh;
     width: 100%;
   }
   .information .gif {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
+    margin: 2.5px;
+    width: 70px;
+    height: 70px;
     -o-object-fit: contain;
        object-fit: contain;
   }
 }
 @media only screen and (min-width: 763px) {
   .information {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   .information .left,
   .information .right {
     margin: 0 2px;
   }
   .information .gif {
-    margin: 30px;
+    margin: 20px;
     -o-object-fit: contain;
        object-fit: contain;
   }

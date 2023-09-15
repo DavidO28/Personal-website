@@ -1,10 +1,9 @@
-import AnimatedText from "../AnimatedText/AnimatedText";
-import "../AnimatedText/animatedText.scss";
+
+
 import MainBackground from "../../assets/head.gif";
 
 
 export default function Home() {
-    let mytext = "hello, I'm David, front-end web developer";
 
     return (
         <div className="Home" id="Home">
@@ -24,12 +23,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
-                {/* <h1>
-                    <AnimatedText text={mytext}
-                        delay={150} infinite />
-                </h1> */}
-
             </div>
         </div>
     );

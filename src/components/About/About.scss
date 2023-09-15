@@ -1,14 +1,21 @@
 @import '../../globalColors.scss';
 
 .About {
+
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    
     h2 {
         text-align: center;
     }
-
+    
     .information {
+        padding:10px 5px;
         display: flex;
         justify-content: space-between;
-        text-align: center;
+        align-items: center;
+        height: 100%;
 
         .left,
         .right {
@@ -26,14 +33,13 @@
 
         .left,
         .right {
-            height: 46vh;
             width: 100%;
         }
 
         .gif {
-            margin: 10px;
-            width: 100px;
-            height: 100px;
+            margin: 2.5px;
+            width: 70px;
+            height: 70px;
             object-fit: contain;
         }
     }
@@ -41,7 +47,8 @@
 
 @media only screen and (min-width: 763px) {
     .information {
-        flex-direction: row;
+        flex-direction: row-reverse;
+
 
         .left,
         .right {
@@ -49,7 +56,7 @@
         }
 
         .gif {
-            margin: 30px;
+            margin: 20px;
             object-fit: contain;
         }
     }

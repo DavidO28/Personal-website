@@ -7,7 +7,7 @@ export default function About() {
             <h2>About me</h2>
             <div className="information">
                   <div className="left">
-                <p>As you already know my specialization is front-end web development, however I'm not limiting my interests to only this technology. I'm curious, willing to try and learn new things. </p>
+                <p>My specialization is front-end web development, however I'm not limiting my interests to only this technology. I'm curious, willing to try and learn new things. </p>
                <img className="gif" src={CodeGif} alt="Gif" /> 
             </div>
             <div className="right">
@@ -17,7 +17,7 @@ export default function About() {
                     <li>CSS(SASS)</li>
                     <li>JavaScript</li>
                     <li>TypeScript</li>
-                    <li>Noje.js</li>
+                    <li>Bootstrap</li>
                     <li>React</li>
                     <li>Github</li>
                 </ul>
