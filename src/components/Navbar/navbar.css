@@ -21,6 +21,11 @@ a {
   body {
     overflow-x: hidden;
   }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   .navbar .nav-ul {
     display: none;
   }

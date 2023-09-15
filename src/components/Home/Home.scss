@@ -45,6 +45,7 @@
 
 @media only screen and (max-width: 762px) {
     .Home {
+        margin-top: 50px;
         flex-direction: column-reverse;
 
         .left,
@@ -78,7 +79,7 @@
 }
 
 .i-title {
-    height: 200px;
+    height: 100px;
     overflow: hidden;
 }
 
