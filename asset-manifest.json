@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Personal-website/static/css/main.dc0a1f20.css",
-    "main.js": "/Personal-website/static/js/main.8bed4425.js",
+    "main.css": "/Personal-website/static/css/main.9be28172.css",
+    "main.js": "/Personal-website/static/js/main.753d6a9e.js",
     "static/media/8bitGif.gif": "/Personal-website/static/media/8bitGif.a7e71621772bd7cb0e7a.gif",
     "static/media/head.gif": "/Personal-website/static/media/head.f11cef79ce3919e92fb8.gif",
     "static/media/amindiSLIDER.png": "/Personal-website/static/media/amindiSLIDER.99d86cc660ce86ad4bc7.png",
     "static/media/SourceCodeProVariableFont_wght.ttf": "/Personal-website/static/media/SourceCodeProVariableFont_wght.f5773826022364e02da4.ttf",
+    "static/media/quiz.png": "/Personal-website/static/media/quiz.9da16cc479e28cec14ec.png",
     "static/media/light.png": "/Personal-website/static/media/light.d2af69a59b6b20ec184e.png",
     "static/media/dark.png": "/Personal-website/static/media/dark.9d1d90d0531ab043eec3.png",
     "index.html": "/Personal-website/index.html",
-    "main.dc0a1f20.css.map": "/Personal-website/static/css/main.dc0a1f20.css.map",
-    "main.8bed4425.js.map": "/Personal-website/static/js/main.8bed4425.js.map"
+    "main.9be28172.css.map": "/Personal-website/static/css/main.9be28172.css.map",
+    "main.753d6a9e.js.map": "/Personal-website/static/js/main.753d6a9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc0a1f20.css",
-    "static/js/main.8bed4425.js"
+    "static/css/main.9be28172.css",
+    "static/js/main.753d6a9e.js"
   ]
 }
