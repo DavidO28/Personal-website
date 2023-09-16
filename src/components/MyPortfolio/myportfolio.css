@@ -22,7 +22,6 @@
 }
 .myportfolio .portfolioSlider a {
   position: relative;
-  display: block;
   width: 300px;
   height: 300px;
   margin: 10px;
@@ -35,6 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   left: 0;
   right: 0;
   top: 0;

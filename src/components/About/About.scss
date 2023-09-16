@@ -6,15 +6,11 @@
     font-weight: bold;
     text-align: center;
     
-    h2 {
-        text-align: center;
-    }
+ 
     
     .information {
         padding:10px 5px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: 100%;
 
         .left,
@@ -31,10 +27,7 @@
     .information {
         flex-direction: column;
 
-        .left,
-        .right {
-            width: 100%;
-        }
+
 
         .gif {
             margin: 2.5px;
@@ -48,7 +41,8 @@
 @media only screen and (min-width: 763px) {
     .information {
         flex-direction: row-reverse;
-
+        justify-content: space-between;
+        align-items: center;
 
         .left,
         .right {

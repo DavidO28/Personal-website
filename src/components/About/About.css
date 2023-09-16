@@ -3,14 +3,9 @@
   font-weight: bold;
   text-align: center;
 }
-.About h2 {
-  text-align: center;
-}
 .About .information {
   padding: 10px 5px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
 }
 .About .information .left,
@@ -21,10 +16,6 @@
 @media only screen and (max-width: 762px) {
   .information {
     flex-direction: column;
-  }
-  .information .left,
-  .information .right {
-    width: 100%;
   }
   .information .gif {
     margin: 2.5px;
@@ -37,6 +28,8 @@
 @media only screen and (min-width: 763px) {
   .information {
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
   .information .left,
   .information .right {
