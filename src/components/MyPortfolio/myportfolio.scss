@@ -7,23 +7,74 @@
         text-align: center;
     }
 
-    .portfolioItems {
-        width: 100px;
-        height: 100px;
+    .portfolioSlider {
+        margin: 2.5px 0;
+        width: 100%;
+        height: calc(100% - 55px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .amindi {
+            &::after {
+                content: "Weather forecast app";
+            }
+        }
+
+        .todolisti {
+            &::after {
+                content: "To do list app";
+            }
+        }
+
+        .quizi {
+            &::after {
+                content: "Quiz app";
+            }
+        }
 
         a {
-            width: 10px;
-            height: 10px;
+            position: relative;
             display: block;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 10px;
 
-            .sliderIMG {
-                width: 10px !important;
-                height: 10px !important;
-                object-fit: contain !important;
+            &::after {
+                overflow: hidden;
+                color: $white;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 0;
+                transition: 0.3s;
+                background: $black;
+                opacity: 0.8;
+                border-radius: 10px;
             }
-            .lameri{
-                width: 100px;
-                height: 100px;
+
+            &:hover {
+
+                &::after {
+                    height: 100%;
+                    overflow: visible;
+                }
+            }
+
+            img {
+                border: 2px solid $black;
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
