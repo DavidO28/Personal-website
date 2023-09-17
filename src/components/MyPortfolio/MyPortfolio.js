@@ -2,6 +2,7 @@ import "./myportfolio.scss";
 import AmindiPic from "../../assets/amindiSLIDER.png";
 import TodolistPic from "../../assets/todolisti.png";
 import QuizPic from "../../assets/quiz.png";
+import MySwiper from "../MySwiper/MySwiper";
 
 export default function MyPortfolio() {
 
@@ -11,7 +12,7 @@ export default function MyPortfolio() {
         <div className="myportfolio" id="Myportfolio">
             <h2>My portfolio</h2>
             <h3>Here you can see all the projects I have made, apart from small exercises</h3>
-            <div className="portfolioSlider">
+            {/* <div className="portfolioSlider">
                 <a className="amindi" href="https://davido28.github.io/weather-app/" target="_blank" >
                     <img src={AmindiPic} alt="amindi" />
                 </a>
@@ -21,6 +22,9 @@ export default function MyPortfolio() {
                 <a className="quizi" href="https://davido28.github.io/millionaire-quiz/" target="_blank" >
                     <img src={QuizPic} alt="quiz" />
                 </a>
+            </div> */}
+            <div className="mySlides">
+            <MySwiper />
             </div>
         </div>
 

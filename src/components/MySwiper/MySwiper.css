@@ -1,0 +1,58 @@
+.amindi,
+.todolisti,
+.quizi {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  color: #fcfcff;
+}
+.amindi::after,
+.todolisti::after,
+.quizi::after {
+  overflow: hidden;
+  color: #fcfcff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.3s;
+  background: #050301;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.amindi img,
+.todolisti img,
+.quizi img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.amindi:hover::after,
+.todolisti:hover::after,
+.quizi:hover::after {
+  height: 100%;
+  overflow: visible;
+}
+
+.amindi::after {
+  content: "Weather forecast app";
+}
+
+.todolisti::after {
+  content: "To do list app";
+}
+
+.quizi::after {
+  content: "Quiz app";
+}/*# sourceMappingURL=MySwiper.css.map */

@@ -8,75 +8,27 @@
     }
 
     .portfolioSlider {
-        margin: 2.5px 0;
         width: 100%;
-        height: calc(100% - 55px);
+        height: calc(100% - 50px);
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
 
-
-        .amindi {
-            &::after {
-                content: "Weather forecast app";
-            }
-        }
-
-        .todolisti {
-            &::after {
-                content: "To do list app";
-            }
-        }
-
-        .quizi {
-            &::after {
-                content: "Quiz app";
-            }
-        }
-
-        a {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 10px;
-            border-radius: 10px;
-
-            &::after {
-                overflow: hidden;
-                color: $white;
-                position: absolute;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 100%;
-                height: 0;
-                transition: 0.3s;
-                background: $black;
-                opacity: 0.8;
-                border-radius: 10px;
-            }
-
-            &:hover {
-
-                &::after {
-                    height: 100%;
-                    overflow: visible;
-                }
-            }
-
-            img {
-                border: 2px solid $black;
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
     }
+}
+
+.mySlides {
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 0 5px;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    border-radius: 20px;
 }
