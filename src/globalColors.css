@@ -1,1 +1,9 @@
-/*# sourceMappingURL=globalColors.css.map */
+.light-theme {
+  color: #050301;
+  background-color: #fcfcff;
+}
+
+.dark-theme {
+  color: #fcfcff;
+  background-color: #050301;
+}/*# sourceMappingURL=globalColors.css.map */

@@ -24,4 +24,10 @@
   background-color: #050301;
   color: #fcfcff;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 762px) {
+  .mySlides {
+    height: calc(100% - 200px);
+  }
 }/*# sourceMappingURL=myportfolio.css.map */
