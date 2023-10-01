@@ -2,15 +2,14 @@
 import "./Navbar.scss";
 import burgerIcon from "../../assets/burgermenu.png";
 import burgerClose from "../../assets/closeburger.png";
-import Sun from "../../assets/light.png";
-import Moon from "../../assets/dark.png";
 import Github from "../../assets/github.png";
 import { useState } from "react";
+import ThemeChanger from "../Theme-changer/ThemeChanger";
 
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
+const[theme,setTheme]=useState("light-theme");
 
     return (
         <>
@@ -48,7 +47,7 @@ export default function Navbar() {
                         <img className={open ? "burger-icon passive" : "burger-icon"} onClick={() => setOpen(!open)} src={burgerIcon} alt="Burger menu icon" />
                         <img className={open ? "burger-close active" : "burger-close"} onClick={() => setOpen(!open)} src={burgerClose} alt="close burger menu icon" />
 
-                        <ul className={open ? "burger-ul active" : "burger-ul"}>
+                        <ul className={(open ? "burger-ul active" : "burger-ul") + " " + "light-theme"}>
                             <li className="burger-li" onClick={() => setOpen(!open)}>
                                 {/* <Link className="nav-link" to="/">Home</Link> */}
                                 <a className="nav-link " href="#Home">Home</a>
@@ -66,10 +65,7 @@ export default function Navbar() {
 
                 </div>
 
-                {/* <div className="theme">
-                    <img className="mysun" src={Sun} alt="light theme" />
-                    <img className="mymoon" src={Moon} alt="dark theme" />
-                </div> */}
+                <ThemeChanger setTheme={setTheme}/>
 
             </nav>
         </>

@@ -1,11 +1,11 @@
 .light-theme {
-  color: #050301;
-  background-color: #fcfcff;
+  color: #050301 !important;
+  background-color: #fcfcff !important;
 }
 
 .dark-theme {
-  color: #fcfcff;
-  background-color: #050301;
+  color: #fcfcff !important;
+  background-color: #050301 !important;
 }
 
 .david {
@@ -82,7 +82,6 @@ a {
     width: 0;
     height: calc(100vh - 50px);
     z-index: 99;
-    background-color: #fcfcff;
     overflow: hidden;
     transition: 0.2s;
   }
@@ -174,23 +173,4 @@ a {
 }
 .navbar .navbar-ul-section .portfoliolink {
   border-bottom-right-radius: 50px;
-}
-
-.theme {
-  height: 50px;
-  margin: 0 10px;
-  padding: 0 5px;
-  border: 2px solid red;
-}
-
-.theme img {
-  width: 25px;
-  height: 40px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-}
-
-.mysun {
-  display: none;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,32 @@
+.light-theme {
+  color: #050301;
+  background-color: #fcfcff;
+}
+
+.dark-theme {
+  color: #fcfcff;
+  background-color: #050301;
+}
+
+.mytheme {
+  position: absolute;
+  left: 50px;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mysun,
+.mymoon {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.mysun {
+  display: none;
+}/*# sourceMappingURL=ThemeChanger.css.map */

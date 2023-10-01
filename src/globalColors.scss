@@ -24,11 +24,11 @@ $green:#59b256;
 // }
 
 .light-theme {
-  color: $black;
-  background-color: $white;
+  color: $black !important;
+  background-color: $white !important;
 }
 
 .dark-theme {
-  color: $white;
-  background-color: $black;
+  color: $white !important;
+  background-color: $black !important;
 }

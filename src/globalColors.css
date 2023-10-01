@@ -1,9 +1,9 @@
 .light-theme {
-  color: #050301;
-  background-color: #fcfcff;
+  color: #050301 !important;
+  background-color: #fcfcff !important;
 }
 
 .dark-theme {
-  color: #fcfcff;
-  background-color: #050301;
+  color: #fcfcff !important;
+  background-color: #050301 !important;
 }/*# sourceMappingURL=globalColors.css.map */
